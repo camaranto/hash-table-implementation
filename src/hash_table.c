@@ -84,7 +84,7 @@ void ht_insert(ht_hash_table* ht, const char* key, const char* value) {
     ht->count++;
 }
 
-void ht_search(ht_hash_table* ht, const char* key) {
+char* ht_search(ht_hash_table* ht, const char* key) {
     int index = ht_get_hash(key, ht->size, 0);
     ht_item* item = ht->items[index];
     int i = 1;
