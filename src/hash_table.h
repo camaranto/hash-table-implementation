@@ -25,5 +25,6 @@ void ht_delete(ht_hash_table* h, const char* key);
 
 #define HT_PRIME_1 163
 #define HT_PRIME_2 157
+#define HT_INITIAL_BASE_SIZE 53
 
 #endif
